@@ -1,0 +1,119 @@
+/* Global Reset and Layout */
+body {
+    font-family: 'Fredoka', sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+h1{
+    font-family: 'Fredoka', sans-serif;
+    font-size: 3.5rem;
+    color: #ff4a5a;
+    margin-bottom: 20px;
+    text-align: center;
+    text-shadow:
+        -2px -2px 0 #fff,  
+         2px -2px 0 #fff,
+        -2px  2px 0 #fff,
+         2px  2px 0 #fff,
+         4px  4px 0px #333;
+}
+
+
+/* Container Blocks */
+.menu-container, .game-container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+}
+
+/* Rules Styling */
+.rules-list {
+    text-align: left;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    color: #444;
+}
+
+.rules-list li {
+    margin-bottom: 10px;
+}
+
+/* General Button Styles */
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    margin: 5px;
+}
+
+.primary-btn {
+    background-color: #10b981;
+    color: white;
+}
+
+.primary-btn:hover {
+    background-color: #059669;
+}
+
+.secondary-btn {
+    background-color: #3b82f6;
+    color: white;
+}
+
+.secondary-btn:hover {
+    background-color: #2563eb;
+}
+
+/* Tic Tac Toe Board Styling */
+.status {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #555;
+    font-weight: bold;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+    background-color: #333;
+    padding: 5px;
+    border-radius: 10px;
+    margin: 0 auto 20px auto;
+    width: 310px;
+}
+
+.cell {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    user-select: none;
+    height: 100px;
+}
+
+.cell:hover {
+    background-color: #e0e0e0;
+}
+
+.cell.x { color: #3b82f6; }
+.cell.o { color: #ef4444; }
