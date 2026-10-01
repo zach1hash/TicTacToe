@@ -1,7 +1,15 @@
-/* Global Reset and Layout */
 body {
     font-family: 'Fredoka', sans-serif;
-    background-color: #f4f4f9;
+    
+    /* 1. This layers a semi-transparent white screen over your image to fade it */
+    background-image: linear-gradient(rgba(244, 244, 249, 0.50), rgba(244, 244, 249, 0.50)), 
+                      url("https://natashalh.com/wp-content/uploads/2024/07/large-tic-tac-toe-board.jpg");
+    
+    /* 2. This ensures the image stretches to perfectly cover the whole screen */
+    background-size: 100% 100%;
+    background-position: center;
+    background-attachment: fixed; /* Keeps the background from scrolling */
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -9,6 +17,8 @@ body {
     height: 100vh;
     margin: 0;
 }
+
+
 h1{
     font-family: 'Fredoka', sans-serif;
     font-size: 3.5rem;
